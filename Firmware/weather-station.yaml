@@ -1,0 +1,142 @@
+esphome:
+  name: weather-station
+  friendly_name: Weather station
+
+esp32:
+  board: esp32-s3-devkitc-1
+  framework:
+    type: esp-idf
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "uCC7vkciVx2bF431L7OMaEE9f2eUHwYYKvL126lA8Ic="
+
+ota:
+  - platform: esphome
+    password: "41d7d0db293fec254490df25bf9281f2"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Weather-Station Fallback Hotspot"
+    password: "F2d1CPlp4gco"
+
+captive_portal:
+
+# I2C Bus Pin Configuration
+i2c:
+  sda: GPIO17
+  scl: GPIO18
+  scan: true
+  id: bus_a 
+
+as3935_i2c:
+  i2c_id: bus_a
+  address: 0x03
+  irq_pin: GPIO16
+  indoor: false
+  noise_level: 2
+  watchdog_threshold: 2
+  spike_rejection: 2
+
+sensor:
+# Temperature and Humidity
+- platform: sht4x
+  address: 0x44
+  temperature:
+    name: "Outdoor temperature"
+    id: temp
+  humidity:
+    name: "Outdoor humidity"
+    id: humidity
+  update_interval: 60s
+
+# Air pressure
+- platform: bmp280_i2c
+  address: 0x76
+  pressure:
+    name: "Air pressure"
+    id: pressure 
+  update_interval: 60s
+
+# Air quality
+- platform: sgp4x
+  address: 0x59
+  update_interval: 1s
+  voc:
+    name: "VOC Index"
+    filters:
+      - throttle: 60s
+  nox:
+    name: "NOx Index"
+    filters:
+      - throttle: 60s
+  compensation:
+    temperature_source: temp
+    humidity_source: humidity
+
+# Lightning detection
+- platform: as3935
+  distance:
+    name: "Lightning distance"
+    unit_of_measurement: "km"
+  lightning_energy:
+    name: "Energy of Lightning"
+    unit_of_measurement: "units"
+
+# Wind speed
+- platform: pulse_counter
+  pin: 
+    number: GPIO14
+    mode: INPUT_PULLUP
+  id: wind_pulse_counter
+  update_interval: 1s
+  internal: true
+
+# Average speed
+- platform: template
+  name: "Wind speed"
+  id: wind_speed_avg
+  unit_of_measurement: 'km/h'
+  icon: 'mdi:weather-windy'
+  update_interval: 60s                                 # Multiplier formula for calculating speeds: ((2 * π * radius in meters) * 60 / 1000) * aerodynamic_coefficient (2-3)
+  lambda: |- 
+    return id(wind_pulse_counter).state * 0.018; 
+  filters: 
+    - sliding_window_moving_average:
+        window_size: 60
+        send_every: 60
+
+# Maximum wind gust speed
+- platform: template
+  name: "Gust speed"
+  id: wind_speed_max
+  unit_of_measurement: 'km/h'
+  icon: 'mdi:weather-windy-variant'
+  update_interval: 60s
+  lambda: |-
+    return id(wind_pulse_counter).state * 0.018;
+  filters:
+    - max:
+        window_size: 60
+        send_every: 60
+
+# Rain detection:
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO15
+      mode: INPUT_PULLUP
+    name: "Rain Detection"
+    device_class: moisture
+    id: rain_sensor
+    filters:
+      - delayed_on: 500ms 
+      - delayed_off: 5s
