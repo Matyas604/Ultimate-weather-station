@@ -1,4 +1,9 @@
-| Total | Price (USD) |
-| :--- | :---: |
-| BOM Total | 123.65 |
-| BOM Total without screws and nuts | 107.89 |
+
+
+|Total|Price (USD)|
+|-|:-:|
+|BOM Total|162.91|
+|BOM Total without screws and nuts|147.15|
+
+
+

@@ -40,7 +40,10 @@ Rain sensor,1,1,1.38,https://www.aliexpress.com/item/1005009470544835.html
 M3 4mm screw,3,50,2.43,https://www.aliexpress.com/item/4000981220901.html
 M3 8mm screw,4,50,2.43,https://www.aliexpress.com/item/4000981220901.html
 M3 heat insert,7,50,2.71,https://www.aliexpress.com/item/1005008666672949.html
-
+Main PCB,1,1,2,https://jlcpcb.com/
+Sensors PCB,1,1,4,https://jlcpcb.com/
+Sensors PCB stencil,1,1,7.11,https://jlcpcb.com/
+JLCPCB shipping + taxes,1,1,26.15,https://jlcpcb.com/
 
 
 
