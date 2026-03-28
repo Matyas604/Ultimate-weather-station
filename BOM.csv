@@ -1,9 +1,9 @@
 Item,Qty.,Min. Qty.,Price (USD),Link
 AMS1117-3.3,1,10,0.4,https://www.lcsc.com/product-detail/C347222.html?s_z=n_AMS1117
-TCJB226M025R0150E,1,1,0.57,https://www.lcsc.com/product-detail/C2160823.html?s_z=n_TCJB226M025R0150E
-CL21B105KBFNNNE,1,20,0.26,https://www.lcsc.com/product-detail/C28323.html?s_z=n_CL21B105KBFNNNE
+TCJB226M025R0150E,1,1,0.57,https://www.lcsc.com/product-detail/C2160823.html?s_z=n_TCJB226M025R0150E  
+CL21B105KBFNNNE,4,20,0.26,https://www.lcsc.com/product-detail/C28323.html?s_z=n_CL21B105KBFNNNE
 CL21A226MAQNNNE,1,20,0.64,https://www.lcsc.com/product-detail/C45783.html?s_z=n_CL21A226MAQNNNE
-CC0805KRX7R9BB104,2,100,0.51,https://www.lcsc.com/product-detail/C49678.html?s_z=n_CC0805KRX7R9BB104
+CC0805KRX7R9BB104,7,100,0.51,https://www.lcsc.com/product-detail/C49678.html?s_z=n_CC0805KRX7R9BB104
 TS-1088-AR02016,2,10,0.51,https://www.lcsc.com/product-detail/C720477.html?s_z=n_TS-1088-AR02016
 TAJA106K016RNJ,1,2,0.25,https://www.lcsc.com/product-detail/C7171.html?s_z=n_TAJA106K016RNJ%2520
 TYPE-C-31-M-12,1,5,0.84,https://www.lcsc.com/product-detail/C165948.html?s_z=n_C165948
@@ -11,9 +11,44 @@ RC0805FR-0710KL,3,100,0.23,https://www.lcsc.com/product-detail/C84376.html
 0805W8F1000T5E,1,100,0.21,https://www.lcsc.com/product-detail/C17408.html
 0805W8F5101T5E,6,100,0.24,https://www.lcsc.com/product-detail/C27834.html
 ESP32-S3-WROOM-1-N16R8,1,1,5.27,https://www.lcsc.com/product-detail/C2913202.html?s_z=n_C2913202
-TSW-120-07-T-S,1,1,0.8,https://www.lcsc.com/product-detail/C3331282.html
+2.54-1*20P,1,5,0.48,https://www.lcsc.com/product-detail/C50981.html
 WJ500V-5.08-2P,1,5,0.65,https://www.lcsc.com/product-detail/C8465.html
 DB128V-5.08-7P-GN-S,1,1,0.61,https://www.lcsc.com/product-detail/C2927514.html
+DB128V-5.08-6P-GN-S,1,1,0.53,https://www.lcsc.com/product-detail/C2915642.html
+BMP280,1,1,6.03.,https://www.lcsc.com/product-detail/C83291.html?s_z=n_BMP280
+LM393DR,1,10,0.71,https://www.lcsc.com/product-detail/C67470.html?s_z=n_C67470
+FRC0805F4R70TS,1,100,0.26,https://www.lcsc.com/product-detail/C2933459.html
+ARG05DTC1002,1,50,0.51,https://www.lcsc.com/product-detail/C2828782.html
+GRM21BR61H106KE43L,2,10,0.72,https://www.lcsc.com/product-detail/C440198.html
+3314G-1-103E,1,1,0.65,https://www.lcsc.com/product-detail/C780220.html?s_z=n_3314G-1-103E
+VJ0805A471FXACW1BC,2,5,1.53,https://www.lcsc.com/product-detail/C1850692.html
+AH3372-P-B,1,5,0.97,https://www.lcsc.com/product-detail/C2900627.html?s_z=n_SS451A
+LCSC shipping, , ,11.1,
+SHT45,1,1,5.76,https://www.tme.eu/cz/details/sht45-ad1f-r2/cidla-vlhkosti/sensirion/3-000-886/
+SGP41,1,1,6.66,https://www.tme.eu/cz/details/sgp41-d-r4/snimace-plynu/sensirion/3-000-060/
+TME shipping + DPH, , ,9.32
+AS3935 and MA5532-AE,1,1,21.83,https://www.aliexpress.com/item/32828658129.html
+5*10*4mm Bearing,2,10,4.06,https://www.aliexpress.com/item/1005006520267674.html
+M5*20mm brass screw,1,10,4.1,https://www.aliexpress.com/item/1005009875439058.html
+M5 nut,8,30,4.5,https://www.aliexpress.com/item/1005010400168277.html
+M5 thread rod 500mm,1,1,7.21,https://www.aliexpress.com/item/1005010032176735.html
+M6 screw 35mm,2,10,3.7,https://www.aliexpress.com/item/1005010704591089.html
+M6 nut,2,25,2.8,https://www.aliexpress.com/item/32977174437.html
+M6 thread rod 300mm,1,1,4.25,https://www.aliexpress.com/item/1005008551456774.html
+3*1mm magnet N35,1,10,5.66,https://www.aliexpress.com/item/1005010687292929.html
+Rain sensor,1,1,1.38,https://www.aliexpress.com/item/1005009470544835.html
+M3 4mm screw,3,50,2.43,https://www.aliexpress.com/item/4000981220901.html
+M3 8mm screw,4,50,2.43,https://www.aliexpress.com/item/4000981220901.html
+M3 heat insert,7,50,2.71,https://www.aliexpress.com/item/1005008666672949.html
+
+Total,123.65
+
+Total without screws and nuts,107.89
+
+
+
+
+
 
 
 
