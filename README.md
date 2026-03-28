@@ -12,3 +12,46 @@ This project was more about 3D modeling than PCB design, but in the end, I’m v
 
 ## CAD model
 It includes a box for the main board and a radiation shield, which is secured with M5 rods and nuts, on top is an anemometer propeller for measuring wind speed. I’ll be placing the weather station on the balcony, so I’ve made a mount for it. It will be attached to the railing, which has a 14° slope, so the mount is designed to keep the radiation shield straight. The shield is connected to the mount with an M6 rod and M6 nuts, there is also a mount for the rain sensor. The railing mount is secured with two parts connected by M6 bolts and nuts.
+<p align="center">
+  <img src="Assets/Radiation shield CAD.png" alt="Radiation shield CAD" width="500">
+</p>
+<p align="center">
+  <img src="Assets/Main case CAD.png" alt="Main case CAD" width="500">
+</p>
+<p align="center">
+  <strong>Made in Fusion360</strong>
+</p>
+
+## PCBs
+### Main PCB:
+<p align="center">
+  Schematic
+</p>
+<p align="center">
+  <img src="Assets/Main PCB schematic.png" alt="Main PCB schematic" width="600">
+</p>
+<p align="center">
+  PCB
+</p>
+<p align="center">
+  <img src="Assets/Main PCB.png" alt="Main PCB" width="800">
+</p>
+
+### Sensors PCB:
+<p align="center">
+  Schematic
+</p>
+<p align="center">
+  <img src="Assets/Sensors PCB schematic.png" alt="Sensors PCB schematic" width="900">
+</p>
+<p align="center">
+  PCB
+</p>
+<p align="center">
+  <img src="Assets/Sensors PCB.png" alt="Sensors PCB" width="1000">
+</p>
+<p align="center">
+  <strong>Made in KiCad</strong>
+</p>
+
+## Firmware
