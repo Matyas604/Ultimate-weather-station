@@ -61,6 +61,10 @@ This weather station uses [ESPHome](https://esphome.io/) firmware. It is program
 You can find it in .csv format [here](https://github.com/Matyas604/Ultimate-weather-station/blob/main/BOM.csv).  
 Please read additional information about the BOM [here](https://github.com/Matyas604/Ultimate-weather-station/blob/main/BOM%20info.md).
 
+## Notes for v2 upgrades
+Since I anticipated potential upgrades, I added additional I2C ports to both the main board and the sensor board. On the main board, you can also select a voltage of 5V or 3.3V, so you can connect a lot of other things. I did this so I wouldn’t have to replace the entire board when adding expansions. The main board also features a very powerful ESP32, which has enough performance for further expansion. I plan to add the following over time:
+- A rain gauge that measures the amount of rainfall
+- A dust sensor for measuring **PM1.0**, **PM2.5**, **PM4**, and **PM10** particles, which can then be used in combination with the **SGP41** to calculate air [**Quality Index (AQI)**](https://en.wikipedia.org/wiki/Air_quality_index) values
 
 <hr>
 
