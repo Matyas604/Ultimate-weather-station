@@ -11,7 +11,8 @@ This project was more about 3D modeling than PCB design, but in the end, I’m v
 - It has two PCBs, one main board and another with sensors located inside the [radiation shield](https://en.wikipedia.org/wiki/Stevenson_screen) that measure the readings. They are connected to each other with a 7-wire cable
 
 ## CAD model
-It includes a box for the main board and a radiation shield, which is secured with M5 rods and nuts, on top is an anemometer propeller for measuring wind speed. I’ll be placing the weather station on the balcony, so I’ve made a mount for it. It will be attached to the railing, which has a 14° slope, so the mount is designed to keep the radiation shield straight. The shield is connected to the mount with an M6 rod and M6 nuts, there is also a mount for the rain sensor. The railing mount is secured with two parts connected by M6 bolts and nuts.
+It includes a box for the main board and a radiation shield, which is secured with M5 rods and nuts, on top is an anemometer propeller for measuring wind speed. I’ll be placing the weather station on the balcony, so I’ve made a mount for it. It will be attached to the railing, which has a 14° slope, so the mount is designed to keep the radiation shield straight. The shield is connected to the mount with an M6 rod and M6 nuts, there is also a mount for the rain sensor. The railing mount is secured with two parts connected by M6 bolts and nuts. All parts must be printed using at least ABS, but ASA would be much better, they must also be white. They will be kept outdoors permanently, and ASA is a material that is highly resistant to UV radiation, sunlight, and rain. It is also very strong, so it can withstand strong winds.
+
 <p align="center">
   <img src="Assets/Radiation shield CAD.png" alt="Radiation shield CAD" width="500">
 </p>
