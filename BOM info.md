@@ -27,6 +27,20 @@ I originally wanted to have the PCB manufactured through JLCPCBA because they wo
   <img src="Assets/JLCPCB cart 2.png" alt="JLCPCB cart 2" width="1000">
 </p>
 
+### LCSC:
+<p align="center">
+  <img src="Assets/LCSC cart 1.png" alt="LCSC cart 1" width="1000">
+</p>
+<p align="center">
+  <img src="Assets/LCSC cart 2.png" alt="LCSC cart 2" width="1000">
+</p>
+<p align="center">
+  <img src="Assets/LCSC cart 3.png" alt="LCSC cart 3" width="1000">
+</p>
+<p align="center">
+  <img src="Assets/LCSC cart 4.png" alt="LCSC cart 4" width="1000">
+</p>
+
 ### Aliexpress:
 <p align="center">
   <img src="Assets/Aliexpress cart 1.png" alt="Aliexpress cart 1" width="1000">
