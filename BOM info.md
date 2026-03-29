@@ -16,6 +16,8 @@ The **AS3935** and **MA5532-AE** components aren’t available on LCSC, but only
 
 Above, I listed the total amount and the amount excluding steel screws and nuts. If the total amount is too high, I can buy the screws at a local hardware store, where I can purchase exactly the number of pieces I need for cheap. On AliExpress, there aren’t any listings that contain just a few screws or nuts; they come in packs of dozens, which is why they’re so expensive. I need some specific screws and nuts (the brass ones) which I can’t just buy at a regular store, and they’re there specifically so they don’t interfere with the lightning sensor.  
 
+I originally wanted to have the PCB manufactured through JLCPCBA because they would have all the components on hand, but the **SHT45**, **SGP41**, and **BMP280** sensors are very sensitive to high-temperature soldering. JLCPCBA charges an extra $30 for low-temperature soldering, not including the assembly cost, so I’ll save a lot even if I have to pay more for shipping. I have low-temperature solder paste and a hot plate, so I won’t damage the sensors. I already have plenty of experience with SMD soldering.
+
 ## Cart photos:
 ### JLCPCB:
 <p align="center">
