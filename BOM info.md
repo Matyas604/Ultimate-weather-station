@@ -2,8 +2,8 @@
 
 |Total|Price (USD)|Description|
 |-|:-:|:-:|
-|**BOM Total**|172.94|Total amount|
-|**BOM Total without screws and nuts**|157.17|Total amount without steel screws and nuts|
+|**BOM Total**|184.54|Total amount|
+|**BOM Total without screws and nuts**|168.77|Total amount without steel screws and nuts|
 
 ## Some information about the BOM:
 
