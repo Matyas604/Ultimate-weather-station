@@ -60,6 +60,11 @@ It includes a box for the main board and a radiation shield, which is secured wi
   <strong>Made in KiCad</strong>
 </p>
 
+## Wiring diagram
+<p align="center">
+  <img src="Assets/Wiring diagram.png" alt="Wiring diagram" width="800">
+</p>
+
 ## Firmware
 This weather station uses [ESPHome](https://esphome.io/) firmware. It is programmed via the USB-C port on the main board. Thanks to ESPHome, it connects to [Home Assistant](https://www.home-assistant.io/), where I can then create various automations and view data from anywhere.
 
