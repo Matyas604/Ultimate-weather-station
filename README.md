@@ -9,9 +9,14 @@ This project was more about 3D modeling than PCB design, but in the end, I’m v
 - It's connected to [Home Assistant](https://www.home-assistant.io/), so I can use the data to set up automations and monitor the readings even when I'm not at home
 - The [ESP32-S3](https://documentation.espressif.com/esp32-s3_datasheet_en.pdf) is the brain of the entire station
 - It has two PCBs, one main board and another with sensors located inside the [radiation shield](https://en.wikipedia.org/wiki/Stevenson_screen) that measure the readings. They are connected to each other with a 7-wire cable
+- It has pull-up resistors for I2C on the main board, additional resistors can be added on the sensor board to extend the cable length beyond 2 meters
+- It is programmable via USB-C
+- It is powered by a 5V two-wire cable
+
+⚠️The screw and nuts for the anemometer and the rods for the radiation shield must be made of brass, because brass is non-magnetic and therefore will not interfere with the lightning detection antenna, unlike iron or steel!
 
 ## CAD model
-It includes a box for the main board and a radiation shield, which is secured with M5 rods and nuts, on top is an anemometer propeller for measuring wind speed. I’ll be placing the weather station on the balcony, so I’ve made a mount for it. It will be attached to the railing, which has a 14° slope, so the mount is designed to keep the radiation shield straight. The shield is connected to the mount with an M6 rod and M6 nuts, there is also a mount for the rain sensor. The railing mount is secured with two parts connected by M6 bolts and nuts. All parts must be printed using at least ABS, but ASA would be much better, they must also be white. They will be kept outdoors permanently, and ASA is a material that is highly resistant to UV radiation, sunlight, and rain. It is also very strong, so it can withstand strong winds.
+It includes a box for the main board and a radiation shield, which is secured with M5 rods and nuts, on top is an anemometer propeller for measuring wind speed. I’ll be placing the weather station on the balcony, so I’ve made a mount for it. It will be attached to the railing, which has a 14° slope, so the mount is designed to keep the radiation shield straight. The shield is connected to the mount with an M6 rod and M6 nuts, there is also a mount for the rain sensor. The railing mount is secured with two parts connected by M6 bolts and nuts. **All parts must be printed using at least ABS, but ASA would be much better, they must also be white!** They will be kept outdoors permanently, and ASA is a material that is highly resistant to UV radiation, sunlight, and rain. It is also very strong, so it can withstand strong winds.
 
 <p align="center">
   <img src="Assets/Radiation shield CAD.png" alt="Radiation shield CAD" width="500">
@@ -59,7 +64,7 @@ It includes a box for the main board and a radiation shield, which is secured wi
 This weather station uses [ESPHome](https://esphome.io/) firmware. It is programmed via the USB-C port on the main board. Thanks to ESPHome, it connects to [Home Assistant](https://www.home-assistant.io/), where I can then create various automations and view data from anywhere.
 
 ## BOM
-You can find it in .csv format [here](https://github.com/Matyas604/Ultimate-weather-station/blob/main/BOM.csv).  
+It's very long, so you can find it in .csv format [here](https://github.com/Matyas604/Ultimate-weather-station/blob/main/BOM.csv).  
 Please read additional information about the BOM [here](https://github.com/Matyas604/Ultimate-weather-station/blob/main/BOM%20info.md).
 
 ## Notes for v2 upgrades
