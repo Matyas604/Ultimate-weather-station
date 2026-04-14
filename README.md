@@ -79,6 +79,26 @@ Since I anticipated potential upgrades, I added additional I2C ports to both the
 - Wind direction
 - UV and light sensor
 
+## License
+This project is licensed under the GNU GPL v3.
+```
+Matyas604/Ultimate-weather-station - Custom weather station for Home Assistant running on an ESP32 with ESPHome code
+Copyright (C) 2026 Matyas604
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+```
+
 <hr>
 
 <p align="center">
