@@ -82,7 +82,7 @@ Since I anticipated potential upgrades, I added additional I2C ports to both the
 ## License
 This project is licensed under the GNU GPL v3.
 ```
-Matyas604/Ultimate-weather-station - Custom weather station for Home Assistant running on an ESP32 with ESPHome code
+Matyas604/Ultimate-weather-station - Custom weather station for Home Assistant running on an ESP32
 Copyright (C) 2026 Matyas604
 
 This program is free software: you can redistribute it and/or modify
